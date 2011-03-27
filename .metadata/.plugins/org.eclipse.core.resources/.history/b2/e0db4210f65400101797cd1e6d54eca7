@@ -1,0 +1,42 @@
+package br.com.pixel3.pixel3list.modelo;
+
+public class Presenca {
+
+	private Long id ;
+	private Aluno aluno ;
+	private Periodo periodo ;
+	private boolean presenca ;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+
+	public Periodo getPeriodo() {
+		return periodo;
+	}
+
+	public void setPeriodo(Periodo periodo) {
+		this.periodo = periodo;
+	}
+
+	public boolean isPresenca() {
+		return presenca;
+	}
+
+	public void setPresenca(boolean presenca) {
+		this.presenca = presenca;
+	}
+	
+}

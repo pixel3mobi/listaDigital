@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget44"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<RelativeLayout
+		android:id="@+id/widget45"
+		android:layout_width="320px"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+		
+		
+		
+		<RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/widget44"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<ImageView
+				android:id="@+id/widget45"
+				android:layout_width="320px"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true">
+			</ImageView>
+			<ImageView
+				android:id="@+id/widget46"
+				android:layout_width="320px"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true">
+			</ImageView>
+		</RelativeLayout>
+		
+		
+		
+		
+		
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@+id/widget47"
+		android:layout_width="320px"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true">
+	</RelativeLayout>
+
+</RelativeLayout>

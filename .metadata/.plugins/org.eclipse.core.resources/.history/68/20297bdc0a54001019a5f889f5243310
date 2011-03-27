@@ -1,0 +1,8 @@
+package br.com.pixel3.pixel3list.modelo;
+
+public class Aluno {
+
+	private Long id ;
+	private String nome ;
+	
+}

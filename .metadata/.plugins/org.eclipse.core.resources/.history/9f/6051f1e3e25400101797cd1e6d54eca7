@@ -1,0 +1,35 @@
+package br.com.pixel3.pixel3list.dao;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import br.com.pixel3.pixel3list.modelo.Usuario;
+
+public class UsuarioDAO extends SQLiteOpenHelper {
+
+	private static final int VERSAO = 1;
+	private static final String TABELA = "Usuario";
+
+	public UsuarioDAO(Context ctx) {
+		super(ctx, TABELA, null, VERSAO) ;
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	}
+	
+	public void salvarOuAtualizar(Usuario usuario) {
+	}
+
+	public Usuario getUsuarioPorId(int i) {
+		Usuario u = new Usuario() ;
+		u.setId(new Long(0)) ;
+		
+		return u;
+	}
+	
+}

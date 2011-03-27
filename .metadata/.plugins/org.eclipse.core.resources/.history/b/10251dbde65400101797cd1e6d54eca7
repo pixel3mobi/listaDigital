@@ -1,0 +1,42 @@
+package br.com.pixel3.pixel3list.dao;
+
+import java.util.List;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import br.com.pixel3.pixel3list.modelo.Aluno;
+
+public class AlunoDAO extends SQLiteOpenHelper {
+
+	private static final int VERSAO = 1;
+	private static final String TABELA = "Aluno";
+
+	public AlunoDAO(Context context) {
+		super(context, TABELA, null, VERSAO);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		String sql = "CREATE TABLE " + TABELA +
+		"(id INTEGER PRIMARY KEY," +
+		" nome TEXT UNIQUE NOT NULL," +
+		");" ;
+		db.execSQL(sql) ;
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		db.execSQL("DROP TABLE IF EXISTS " + TABELA);
+		this.onCreate(db);
+	}
+	
+	public List<Aluno> getLista () {
+		return null ;
+	}
+
+	public void adicionar(Aluno aluno) {
+		
+	}
+
+}

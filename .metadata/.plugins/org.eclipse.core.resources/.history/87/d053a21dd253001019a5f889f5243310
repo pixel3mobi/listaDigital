@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView 
+		android:id="@+id/cabecalho"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/cabecalho"
+		android:layout_alignParentTop="true" 
+		android:layout_width="fill_parent"
+		android:layout_centerHorizontal="true">
+	</ImageView>
+	<RelativeLayout 
+		android:layout_height="wrap_content"
+		android:id="@+id/meio" 
+		android:layout_width="wrap_content"
+		android:layout_below="@+id/cabecalho" 
+		android:layout_alignParentBottom="@+id/cabecalho">
+		<ImageView 
+			android:id="@+id/imgInstituicao"
+			android:layout_height="200dip" 
+			android:layout_width="100dip"
+			android:src="@drawable/icon" 
+			android:layout_alignParentLeft="true">
+		</ImageView>
+		<RelativeLayout 
+			android:layout_height="wrap_content"
+			android:id="@+id/relativeLayout3" 
+			android:layout_width="fill_parent"
+			android:layout_toRightOf="@+id/imgInstituicao">
+			<TextView 
+				android:layout_alignParentTop="true"
+				android:layout_height="wrap_content" 
+				android:text="Login:" 
+				android:id="@+id/txtLogin"
+				android:layout_width="fill_parent">
+			</TextView>
+			<EditText 
+				android:layout_alignParentBottom="@+id/txtLogin"
+				android:layout_height="wrap_content" 
+				android:id="@+id/editLogin"
+				android:hint="Digite o seu login" 
+				android:layout_width="fill_parent">
+			</EditText>
+			<TextView 
+				android:layout_height="wrap_content" 
+				android:text="Senha:" 
+				android:id="@+id/txtSenha" 
+				android:layout_width="fill_parent" 
+				android:layout_alignParentBottom="@+id/editLogin">
+			</TextView>
+			<EditText 
+				android:layout_alignLeft="@+id/textView2"
+				android:layout_height="wrap_content" 
+				android:id="@+id/editSenha"
+				android:hint="Digite a sua senha" 
+				android:layout_alignParentBottom="@+id/txtSenha"
+				android:layout_width="fill_parent">
+			</EditText>
+			<Button 
+				android:id="@+id/botaoLogin" 
+				android:layout_height="wrap_content"
+				android:text="Button" 
+				android:layout_below="@+id/editSenha"
+				android:layout_alignParentLeft="true" 
+				android:layout_width="wrap_content">
+			</Button>
+		</RelativeLayout>
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="200dip"
+		android:layout_alignParentBottom="true" 
+		android:id="@+id/rodape">
+		<ImageView android:id="@+id/imagem"
+			android:layout_width="fill_parent" 
+			android:layout_height="200dip"
+			android:layout_alignParentTop="true"
+			android:src="@drawable/icon">
+		</ImageView>
+		<ImageView 
+			android:id="@+id/rodape"
+			android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/rodape">
+		</ImageView>
+	</RelativeLayout>
+
+</RelativeLayout>

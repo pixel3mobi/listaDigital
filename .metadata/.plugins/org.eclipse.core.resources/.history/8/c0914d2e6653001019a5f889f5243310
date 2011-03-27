@@ -1,0 +1,33 @@
+package br.com.pixel3.pixel3list;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AbsoluteLayout;
+import android.widget.Button;
+import android.widget.ImageView;
+
+public class Pixel3List extends Activity {
+
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        AbsoluteLayout layout = (AbsoluteLayout) findViewById(R.id.layoutMain) ;
+        
+        ImageView cabecalho = (ImageView) findViewById(R.id.cabecalho) ;
+        cabecalho.setMinimumWidth(layout.getWidth()) ;
+        cabecalho.setMinimumHeight(layout.getHeight()) ;
+        
+        Button botaoLogin = (Button) findViewById(R.id.botaoLogin) ;
+        
+        botaoLogin.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				startActivity(new Intent(Pixel3List.this, Chamada.class)) ;
+			}
+		}) ;
+    }
+}

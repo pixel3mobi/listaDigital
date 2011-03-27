@@ -1,0 +1,95 @@
+package br.com.pixel3.pixel3list;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ToggleButton;
+import br.com.pixel3.pixel3list.dao.UsuarioDAO;
+import br.com.pixel3.pixel3list.modelo.Usuario;
+
+public class MeusDados extends Activity {
+	
+	private Button btnSalvar;
+	private UsuarioDAO dao;
+	private Usuario usuario;
+	private EditText editEscola;
+	private EditText editEmail;
+	private ToggleButton toggleSexo;
+	private EditText editSenha;
+	private EditText editNome;
+	private EditText editLogin;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.meusdados) ;
+
+		
+		editLogin = (EditText) findViewById(R.id.editLogin) ;
+		editNome = (EditText) findViewById(R.id.editNome) ;
+		editSenha = (EditText) findViewById(R.id.editSenha) ;
+		toggleSexo = (ToggleButton) findViewById(R.id.toggleSexo) ;
+		editEmail = (EditText) findViewById(R.id.editEmail) ;
+		editEscola = (EditText) findViewById(R.id.editEscola) ;
+		btnSalvar = (Button) findViewById(R.id.btnSalvar) ;
+		
+		dao = new UsuarioDAO (MeusDados.this) ;
+		usuario = dao.getUsuarioPorId(1L) ;
+		dao.close() ;
+		if ( usuario.getId() == 0 ) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			
+			StringBuilder sb = new StringBuilder() ;
+			sb.append("CONTRATO DE LICENÇA DE USUÁRIO FINAL COMPLEMENTAR PARA  APLICATIVOS PIXEL³ ('EULA Complementar')" +
+			"\nIMPORTANTE: LEIA COM ATENÇÃO – Este aplicativo ('PixelList'), inclusive toda documentação 'on-line' ou " +
+			"eletrônica ('Componentes do Aplicativo') estão sujeitos aos termos e condições do contrato sob o qual " +
+			"você aceitou a instalação descrita abaixo (cada um deles um 'Contrato de Licença de Usuário Final' ou 'EULA') e aos termos e condições deste EULA Complementar. " +
+			"\nAO INSTALAR, COPIAR OU DE OUTRO MODO USAR OS COMPONENTES DO APLICATIVO, VOCÊ ESTÁ CONCORDANDO EM VINCULAR-SE AOS TERMOS E CONDIÇÕES DO EULA DO " +
+			"APLICATIVO APLICÁVEL E DESTA EULA COMPLEMENTAR. SE VOCÊ NÃO CONCORDAR COM ESTES TERMOS E CONDIÇÕES, NÃO INSTALE, COPIE OU USE APLICATIVO.'" +
+			"\n* A PIXEL³ MOBI retém todos os direitos, titularidade e interesses relacionados aos Componentes do aplicativo. Todos os direitos que não estejam expressamente concedidos são reservados à Pixel³ Mobi." +
+			"\n* A Pixel³ Mobi se ausenta de qualquer responsabilidade por incompatibilidade de hardware ou por mau uso por parte do usuário." +
+			"\n* Este aplicativo é destribuido de forma grauita, por tanto não nos comprometemos com atualizações e manutenção do mesmo." ) ;
+			
+			builder.setMessage(sb.toString());
+			builder.setNeutralButton("OK", null);
+			AlertDialog dialog = builder.create();
+			dialog.setTitle("EULA");
+			dialog.show();
+		}
+
+		if ( usuario.getId() != 0 ) {
+			editLogin.setText(usuario.getLogin()) ;
+			editNome.setText(usuario.getNome()) ;
+			editSenha.setText(usuario.getSenha()) ;
+			toggleSexo.setText(usuario.getSexo()) ;
+			editEmail.setText(usuario.getEmail()) ;
+			editEscola.setText(usuario.getEscola()) ;
+			btnSalvar.setText("Alterar") ;
+		}
+		
+		btnSalvar.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				
+				usuario.setLogin(editLogin.getEditableText().toString()) ;
+				usuario.setSenha(editSenha.getEditableText().toString()) ;
+				usuario.setSexo(toggleSexo.getText().toString()) ;
+				usuario.setEmail(editEmail.getEditableText().toString()) ;
+				usuario.setEscola(editEscola.getEditableText().toString()) ;
+				usuario.setNome(editNome.getEditableText().toString()) ;
+
+				dao = new UsuarioDAO(MeusDados.this) ;
+				dao.salvarOuAtualizar(usuario) ;
+				dao.close() ;
+				
+				startActivity(new Intent(MeusDados.this, Chamada.class)) ;
+				finish() ;
+			}
+		}) ;
+	}
+	
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget50"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView
+		android:id="@+id/cabecalho"
+		android:src="@drawable/cabecalho"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+	</ImageView>
+	<RelativeLayout 
+		android:layout_height="wrap_content" 
+		android:id="@+id/relativeLayout2"
+		android:layout_width="wrap_content" 
+		android:layout_below="@+id/cabecalho" 
+		android:layout_alignLeft="@+id/cabecalho" 
+		android:layout_alignRight="@+id/cabecalho">
+		<TextView 
+			android:id="@+id/txtProfessor" 
+			android:layout_height="wrap_content" 
+			android:paddingLeft="10dip" 
+			android:text="Professor:"
+			android:layout_width="wrap_content" 
+			android:layout_alignParentTop="true">
+		</TextView>
+		<TextView android:id="@+id/txtPeriodo" android:layout_height="wrap_content" android:paddingLeft="10dip" android:layout_width="wrap_content" android:text="Período:" android:layout_below="@+id/txtProfessor" android:layout_alignLeft="@+id/txtProfessor"></TextView>
+		<TextView android:id="@+id/nomeProfessor" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Nome Professor" android:layout_toRightOf="@+id/txtProfessor" android:layout_alignTop="@+id/txtProfessor" android:layout_alignBottom="@+id/txtProfessor"></TextView>
+		<Spinner android:layout_height="50dip" android:layout_width="fill_parent" android:paddingLeft="10dip" android:id="@+id/periodos" android:layout_below="@+id/nomeProfessor" android:layout_alignLeft="@+id/nomeProfessor"></Spinner>
+		<TextView android:id="@+id/txtData" android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/periodos" android:layout_alignLeft="@+id/periodos" android:layout_alignRight="@+id/periodos"></TextView>
+	</RelativeLayout>
+	<ListView
+		android:id="@+id/alunos"
+		android:layout_width="fill_parent"
+		android:layout_height="300dip"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true">
+	</ListView>
+	<RelativeLayout android:layout_height="50dip" android:layout_width="wrap_content" android:id="@+id/relativeLayout1" android:layout_above="@+id/alunos" android:layout_alignLeft="@+id/alunos" android:layout_alignRight="@+id/alunos">
+		<Button android:layout_alignParentLeft="true" android:id="@+id/btnAnterior" android:layout_height="40dip" android:layout_width="wrap_content" android:text="Anterior"></Button>
+		<Button android:layout_alignTop="@+id/btnAnterior" android:id="@+id/btnProximo" android:layout_toRightOf="@+id/btnAnterior" android:layout_height="40dip" android:layout_width="wrap_content" android:layout_alignBottom="@+id/btnAnterior" android:text="Próximo"></Button>
+		<Button android:layout_alignTop="@+id/btnProximo" android:id="@+id/btnSalvar" android:layout_toRightOf="@+id/btnProximo" android:layout_height="40dip" android:layout_width="wrap_content" android:layout_alignBottom="@+id/btnProximo" android:text="Salvar"></Button>
+		<Button android:id="@+id/btnNovo" android:layout_toRightOf="@+id/btnSalvar" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Novo" android:layout_alignTop="@+id/btnSalvar" android:layout_alignBottom="@+id/btnSalvar"></Button>
+	</RelativeLayout>
+</RelativeLayout>

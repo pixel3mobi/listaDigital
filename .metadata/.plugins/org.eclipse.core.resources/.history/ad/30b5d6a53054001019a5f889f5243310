@@ -1,0 +1,21 @@
+package br.com.pixel3.pixel3list;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import br.com.pixel3.pixel3list.util.Pixel3ListUtil;
+
+public class Pixel3List extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		if ( new Pixel3ListUtil(this).isPrimeiroAcesso() ) {
+			startActivity(new Intent(this, MeusDados.class)) ;
+		} else {
+			startActivity(new Intent(this, Principal.class)) ;
+		}
+	}
+	
+}

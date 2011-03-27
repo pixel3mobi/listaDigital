@@ -1,0 +1,10 @@
+package br.com.pixel3.pixel3list.modelo;
+
+public class Presenca {
+
+	private Long id ;
+	private Aluno aluno ;
+	private Periodo periodo ;
+	private boolean presenca ;
+	
+}

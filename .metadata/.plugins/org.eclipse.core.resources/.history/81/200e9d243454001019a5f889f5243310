@@ -1,0 +1,46 @@
+package br.com.pixel3.pixel3list.util;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+
+public class Pixel3ListUtil {
+
+	private final Context ctx;
+	
+	private static final String PREFS = "Pixel3List" ;
+
+	private static final String ACESSOS = "Acessos";
+
+	public Pixel3ListUtil(Context ctx) {
+		this.ctx = ctx;
+	}
+	
+	public boolean isPrimeiroAcesso() {
+		SharedPreferences prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE) ;
+		int acessos = prefs.getInt(ACESSOS, -1) ;
+		
+		acessos = acessos + 1 ;
+		
+		Editor edit = prefs.edit() ; 
+		edit.putInt(ACESSOS, acessos) ;
+		edit.commit() ;
+		
+		return acessos > 0 ;
+	}
+	
+	public String cript(String dado) {
+		try {
+			MessageDigest msg = MessageDigest.getInstance("sha-256") ;
+			byte[] digest = msg.digest(dado.getBytes()) ;
+			String cript = new String(digest) ;
+			return cript ;
+		} catch (NoSuchAlgorithmException e) {
+			throw new RuntimeException() ;
+		}
+	}
+	
+}

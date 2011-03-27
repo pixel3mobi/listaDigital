@@ -1,0 +1,13 @@
+package br.com.pixel3.pixel3list.modelo;
+
+public class Usuario {
+
+	private Long id ;
+	private String nome ;
+	private String sexo ;
+	private String login ;
+	private String senha ;
+	private String escola ;
+	private String email ;
+	
+}

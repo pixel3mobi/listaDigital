@@ -1,0 +1,627 @@
+!SESSION 2011-03-20 21:01:08.210 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-20 21:02:45.656
+!MESSAGE Failed to load properties file for project 'Pixel3List'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 21:32:37.390
+!MESSAGE AndroidManifest: Ignoring unknown 'EditTextandroid:id' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 21:40:19.047
+!MESSAGE AndroidManifest: Ignoring unknown 'ac' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 21:40:20.513
+!MESSAGE AndroidManifest: Ignoring unknown 'activity-alia' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 21:40:20.815
+!MESSAGE AndroidManifest: Ignoring unknown 'activity-al' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 21:40:21.086
+!MESSAGE AndroidManifest: Ignoring unknown 'activity-' XML element
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-20 21:46:44.945
+!MESSAGE No command output when running: 'am start -n br.com.pixel3.pixel3list/br.com.pixel3.pixel3list.Pixel3List -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.clientChanged(AndroidLaunchController.java:1489)
+	at com.android.ddmlib.AndroidDebugBridge.clientChanged(AndroidDebugBridge.java:868)
+	at com.android.ddmlib.Device.update(Device.java:398)
+	at com.android.ddmlib.Client.update(Client.java:835)
+	at com.android.ddmlib.HandleAppName.handleAPNM(HandleAppName.java:90)
+	at com.android.ddmlib.HandleAppName.handleChunk(HandleAppName.java:64)
+	at com.android.ddmlib.MonitorThread.callHandler(MonitorThread.java:414)
+	at com.android.ddmlib.MonitorThread.processClientActivity(MonitorThread.java:322)
+	at com.android.ddmlib.MonitorThread.run(MonitorThread.java:263)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:18:30.928
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@379638b9" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:18:35.123
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@3878abc6" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:18:39.872
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@3f7d8bac" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:18:41.452
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@4133b793" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:19:00.440
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@1939169c" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:19:02.770
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@9d16b98" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:19:13.521
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@15603546" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-20 22:19:32.261
+!MESSAGE main.xml: Unable to resolve drawable "com.android.layoutlib.bridge.ResourceValue@57e2c6d6" in attribute "src"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:19:33.614
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:19:33.976
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:19:34.413
+!MESSAGE AndroidManifest: Ignoring unknown 'Relat' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:19:34.776
+!MESSAGE AndroidManifest: Ignoring unknown 'Relativ' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:19:35.247
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 07:27:38.804
+!MESSAGE principal.xml: error!
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.android.layoutlib.bridge.BridgeContext.findResValue(BridgeContext.java:540)
+	at com.android.layoutlib.bridge.BridgeContext.resolveValue(BridgeContext.java:398)
+	at com.android.layoutlib.bridge.BridgeContext.obtainStyledAttributes(BridgeContext.java:327)
+	at android.widget.ImageView.<init>(ImageView.java:112)
+	at android.widget.ImageView.<init>(ImageView.java:105)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at android.view.LayoutInflater.createView(LayoutInflater.java:499)
+	at android.view.BridgeInflater.onCreateView(BridgeInflater.java:77)
+	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:562)
+	at android.view.BridgeInflater.createViewFromTag(BridgeInflater.java:122)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:617)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:620)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:407)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:296)
+	at com.android.layoutlib.bridge.Bridge.computeLayout(Bridge.java:377)
+	at com.android.ide.common.rendering.LayoutLibrary.createLegacySession(LayoutLibrary.java:416)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:285)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1506)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1312)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1043)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.activated(GraphicalEditorPart.java:870)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditor.pageChange(LayoutEditor.java:365)
+	at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(MultiPageEditorPart.java:290)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2743)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1429)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 07:27:38.807
+!MESSAGE principal.xml: ArrayIndexOutOfBoundsException: 1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:11.236
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:11.501
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:15.237
+!MESSAGE AndroidManifest: Ignoring unknown 'AbsoluteLayou' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:15.871
+!MESSAGE AndroidManifest: Ignoring unknown 'AbsoluteLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:15.953
+!MESSAGE AndroidManifest: Ignoring unknown 'AbsoluteL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:16.036
+!MESSAGE AndroidManifest: Ignoring unknown 'Absolut' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:16.120
+!MESSAGE AndroidManifest: Ignoring unknown 'Absol' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:16.203
+!MESSAGE AndroidManifest: Ignoring unknown 'Abs' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:16.447
+!MESSAGE AndroidManifest: Ignoring unknown 'A' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:17.525
+!MESSAGE AndroidManifest: Ignoring unknown 'Re' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:28:17.793
+!MESSAGE AndroidManifest: Ignoring unknown 'Rela' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:28.165
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeLayou' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:28.796
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:28.881
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:28.963
+!MESSAGE AndroidManifest: Ignoring unknown 'Relativ' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:29.047
+!MESSAGE AndroidManifest: Ignoring unknown 'Relat' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:29.256
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:29.544
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:30.338
+!MESSAGE AndroidManifest: Ignoring unknown 'F' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:52:30.764
+!MESSAGE AndroidManifest: Ignoring unknown 'Fra' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 07:53:07.156
+!MESSAGE principal.xml: Unable to resolve id "true" for attribute "layout_alignBottom"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 08:17:26.060
+!MESSAGE principal.xml: Unable to resolve id "true" for attribute "layout_alignLeft"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 08:17:34.091
+!MESSAGE principal.xml: Unable to resolve id "true" for attribute "layout_alignLeft"
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:35.025
+!MESSAGE AndroidManifest: Ignoring unknown 'FrameLayou' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:35.105
+!MESSAGE AndroidManifest: Ignoring unknown 'FrameLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:35.188
+!MESSAGE AndroidManifest: Ignoring unknown 'FrameL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:35.272
+!MESSAGE AndroidManifest: Ignoring unknown 'Fram' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:35.355
+!MESSAGE AndroidManifest: Ignoring unknown 'Fr' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:36.341
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:36.645
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:40.757
+!MESSAGE AndroidManifest: Ignoring unknown 'FrameLayou' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:41.386
+!MESSAGE AndroidManifest: Ignoring unknown 'FrameLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:41.469
+!MESSAGE AndroidManifest: Ignoring unknown 'FrameL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:41.553
+!MESSAGE AndroidManifest: Ignoring unknown 'Fram' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 10:16:41.845
+!MESSAGE AndroidManifest: Ignoring unknown 'Fr' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 12:35:32.999
+!MESSAGE main.xml: Unable to resolve id "true" for attribute "layout_alignTop"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 13:05:23.143
+!MESSAGE No command output when running: 'am start -n br.com.pixel3.pixel3list/br.com.pixel3.pixel3list.Pixel3List -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 10003a73eca5
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 13:12:49.496
+!MESSAGE chamada.xml: error!
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.android.layoutlib.bridge.BridgeContext.findResValue(BridgeContext.java:540)
+	at com.android.layoutlib.bridge.BridgeContext.resolveValue(BridgeContext.java:398)
+	at com.android.layoutlib.bridge.BridgeContext.obtainStyledAttributes(BridgeContext.java:327)
+	at com.android.layoutlib.bridge.BridgeContext.obtainStyledAttributes(BridgeContext.java:236)
+	at android.widget.RelativeLayout$LayoutParams.<init>(RelativeLayout.java:1040)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:908)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:67)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:619)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:407)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:296)
+	at com.android.layoutlib.bridge.Bridge.computeLayout(Bridge.java:377)
+	at com.android.ide.common.rendering.LayoutLibrary.createLegacySession(LayoutLibrary.java:416)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:285)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1506)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1312)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1043)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1005)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditor.xmlModelChanged(LayoutEditor.java:303)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1213)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.fireModelChanged(AbstractStructuredModel.java:553)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.internalModelChanged(AbstractStructuredModel.java:887)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.changedModel(AbstractStructuredModel.java:382)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.changedModel(DOMModelImpl.java:167)
+	at org.eclipse.wst.sse.core.internal.undo.StructuredTextUndoManager.undo(StructuredTextUndoManager.java:640)
+	at org.eclipse.wst.sse.ui.StructuredTextViewerUndoManager.undo(StructuredTextViewerUndoManager.java:183)
+	at org.eclipse.jface.text.TextViewer.doOperation(TextViewer.java:3952)
+	at org.eclipse.jface.text.source.SourceViewer.doOperation(SourceViewer.java:1005)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.doOperation(ProjectionViewer.java:1534)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:611)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:131)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:129)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1253)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1099)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1508)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4268)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4160)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 13:12:49.499
+!MESSAGE chamada.xml: ArrayIndexOutOfBoundsException: 1
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:36.053
+!MESSAGE AndroidManifest: Ignoring unknown 'TButton' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:36.465
+!MESSAGE AndroidManifest: Ignoring unknown 'TexButton' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:37.034
+!MESSAGE AndroidManifest: Ignoring unknown 'TextVButton' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:39.382
+!MESSAGE AndroidManifest: Ignoring unknown 'TextVieButton' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:39.785
+!MESSAGE AndroidManifest: Ignoring unknown 'TextViewutton' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:40.072
+!MESSAGE AndroidManifest: Ignoring unknown 'TextViewton' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:40.353
+!MESSAGE AndroidManifest: Ignoring unknown 'TextViewn' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:48.424
+!MESSAGE AndroidManifest: Ignoring unknown 'Buttn' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:48.724
+!MESSAGE AndroidManifest: Ignoring unknown 'Bun' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:49.010
+!MESSAGE AndroidManifest: Ignoring unknown 'n' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:51.733
+!MESSAGE AndroidManifest: Ignoring unknown 'Te' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:52.364
+!MESSAGE AndroidManifest: Ignoring unknown 'Text' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 13:24:52.902
+!MESSAGE AndroidManifest: Ignoring unknown 'TextVi' XML element
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 15:19:22.661
+!MESSAGE chamada.xml: error!
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-21 15:19:22.664
+!MESSAGE chamada.xml: ArrayIndexOutOfBoundsException: null
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:55.363
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:55.670
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:57.845
+!MESSAGE AndroidManifest: Ignoring unknown 'LinearLayou' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:58.475
+!MESSAGE AndroidManifest: Ignoring unknown 'LinearLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:58.559
+!MESSAGE AndroidManifest: Ignoring unknown 'LinearL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:58.643
+!MESSAGE AndroidManifest: Ignoring unknown 'Linea' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:58.729
+!MESSAGE AndroidManifest: Ignoring unknown 'Lin' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:50:58.999
+!MESSAGE AndroidManifest: Ignoring unknown 'L' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-21 23:51:00.221
+!MESSAGE AndroidManifest: Ignoring unknown 'Re' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 00:02:21.752
+!MESSAGE AndroidManifest: Ignoring unknown 'S' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 00:02:22.235
+!MESSAGE AndroidManifest: Ignoring unknown 'Scr' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 00:02:22.617
+!MESSAGE AndroidManifest: Ignoring unknown 'Scrol' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 00:05:57.635
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 00:05:57.936
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 00:05:58.353
+!MESSAGE AndroidManifest: Ignoring unknown 'Relat' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 09:28:55.884
+!MESSAGE AndroidManifest: Ignoring unknown 'S' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 09:28:56.280
+!MESSAGE AndroidManifest: Ignoring unknown 'Scr' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:02.676
+!MESSAGE AndroidManifest: Ignoring unknown 'L' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:03.039
+!MESSAGE AndroidManifest: Ignoring unknown 'Lis' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:04.138
+!MESSAGE AndroidManifest: Ignoring unknown 'Lis' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:04.548
+!MESSAGE AndroidManifest: Ignoring unknown 'L' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:05.928
+!MESSAGE AndroidManifest: Ignoring unknown 'L' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:06.354
+!MESSAGE AndroidManifest: Ignoring unknown 'Lin' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:44:06.755
+!MESSAGE AndroidManifest: Ignoring unknown 'Linea' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:47:06.252
+!MESSAGE AndroidManifest: Ignoring unknown 'S' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:47:06.700
+!MESSAGE AndroidManifest: Ignoring unknown 'Scr' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-22 12:47:07.080
+!MESSAGE AndroidManifest: Ignoring unknown 'Scrol' XML element
+!SESSION 2011-03-22 20:44:04.793 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_18
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2011-03-22 22:59:10.279
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-22 23:51:14.167
+!MESSAGE No command output when running: 'am start -n br.com.pixel3.pixel3list/br.com.pixel3.pixel3list.Pixel3List -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 10003a73eca5
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-23 00:19:51.961
+!MESSAGE No command output when running: 'am start -n br.com.pixel3.pixel3list/br.com.pixel3.pixel3list.Pixel3List -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 10003a73eca5
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-03-23 13:07:50.565
+!MESSAGE chamada.xml: Unable to resolve dimension value "" in attribute "padding"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-23 13:07:50.572
+!MESSAGE chamada.xml: error!
+!STACK 0
+java.lang.UnsupportedOperationException: Can't convert to dimension: 13
+	at com.android.layoutlib.bridge.BridgeTypedArray.getDimensionPixelSize(BridgeTypedArray.java:477)
+	at android.view.View.<init>(View.java:1849)
+	at android.widget.TextView.<init>(TextView.java:326)
+	at android.widget.TextView.<init>(TextView.java:320)
+	at sun.reflect.GeneratedConstructorAccessor69.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at android.view.LayoutInflater.createView(LayoutInflater.java:499)
+	at android.view.BridgeInflater.onCreateView(BridgeInflater.java:77)
+	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:562)
+	at android.view.BridgeInflater.createViewFromTag(BridgeInflater.java:122)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:617)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:620)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:407)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:296)
+	at com.android.layoutlib.bridge.Bridge.computeLayout(Bridge.java:377)
+	at com.android.ide.common.rendering.LayoutLibrary.createLegacySession(LayoutLibrary.java:416)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:285)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1506)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1312)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1043)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1005)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditor.xmlModelChanged(LayoutEditor.java:303)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1213)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.fireModelChanged(AbstractStructuredModel.java:553)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.internalModelChanged(AbstractStructuredModel.java:887)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.changedModel(AbstractStructuredModel.java:382)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.changedModel(DOMModelImpl.java:167)
+	at org.eclipse.wst.sse.core.internal.undo.StructuredTextUndoManager.undo(StructuredTextUndoManager.java:640)
+	at org.eclipse.wst.sse.ui.StructuredTextViewerUndoManager.undo(StructuredTextViewerUndoManager.java:183)
+	at org.eclipse.jface.text.TextViewer.doOperation(TextViewer.java:3952)
+	at org.eclipse.jface.text.source.SourceViewer.doOperation(SourceViewer.java:1005)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.doOperation(ProjectionViewer.java:1534)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:611)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:131)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:129)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1253)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1099)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1508)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4268)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4160)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-23 13:07:50.575
+!MESSAGE chamada.xml: UnsupportedOperationException: Can't convert to dimension: 13
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-03-24 23:24:27.279
+!MESSAGE No command output when running: 'am start -n br.com.pixel3.pixel3list/br.com.pixel3.pixel3list.Pixel3List -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 10003a73eca5
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)

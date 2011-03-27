@@ -1,0 +1,10 @@
+package br.com.pixel3.pixel3list.modelo;
+
+public class Periodo {
+
+	private Long id ;
+	private String nome ;
+	private String horario ;
+	private String data ;
+	
+}

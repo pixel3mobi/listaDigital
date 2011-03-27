@@ -1,0 +1,57 @@
+1300669217156	Delete element
+1300669239168	Rename resource 'layoutAppMarket-01.png'
+1300669247681	Rename resource 'layoutAppMarket-02.png'
+1300669432577	Delete element
+1300669442871	Delete element
+1300669445041	Delete element
+1300669450272	Rename resource 'Icon.png'
+1300670298357	Move files
+1300670305344	Move files
+1300670310914	Delete elements
+1300670315109	Delete element
+1300670319835	Copy file
+1300670321413	Copy file
+1300670353485	Delete elements
+1300670372245	Rename resource 'buttom480.png'
+1300670379363	Rename resource 'top480.png'
+1300670388716	Rename resource 'top270.png'
+1300670393962	Rename resource 'buttom270.png'
+1300670402899	Rename resource 'buttom380.png'
+1300670409003	Rename resource 'top380.png'
+1300723059471	Rename resource 'fundoBranco.png'
+1300723493310	Delete element
+1300750905172	Delete element
+1300753451861	Rename resource 'banner380.png'
+1300753456462	Rename resource 'banner270.png'
+1300753461627	Rename resource 'banner480.png'
+1300753907238	Delete element
+1300756376008	Rename resource 'novoAluno.png'
+1300756382179	Rename resource 'meusDados.png'
+1300756389466	Rename resource 'novoPeriodo.png'
+1300756491763	Copy files
+1300756493856	Copy files
+1300756617517	Delete elements
+1300756625199	Rename resource 'meusDados.png'
+1300756629879	Rename resource 'novoAluno.png'
+1300756637317	Rename resource 'novoPeriodo.png'
+1300756646269	Copy files
+1300756649810	Copy files
+1300760543115	Rename resource 'EULA.txt'
+1300761571620	Delete element
+1300763367464	Move file
+1300800660060	Encapsulate field 'email'
+1300800662683	Encapsulate field 'sexo'
+1300800665076	Encapsulate field 'periodos'
+1300843792186	Delete element
+1300844545281	Encapsulate field 'periodos'
+1300847621642	Delete element
+1300847634404	Delete element
+1300847639874	Delete element
+1300847642382	Delete element
+1300847738209	Encapsulate field 'data'
+1301015132863	Extract local variable 'arrayAdapter'
+1301016321538	Extract local variable 'presenca'
+1301048201896	Extract method 'zeraHoraDaData'
+1301091334704	Extract method 'extracted'
+1301091348190	Rename method 'extracted'
+1301095342279	Rename field 'PREFERENCIAS'

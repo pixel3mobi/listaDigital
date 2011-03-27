@@ -1,0 +1,25 @@
+package br.com.pixel3.pixel3list;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
+
+public class FormAluno extends Activity {
+
+	private LinearLayout checkPeriodos;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.formaluno) ;
+		
+		checkPeriodos = (LinearLayout) findViewById(R.id.checkPeriodos) ;
+		checkPeriodos.removeAllViews() ;
+		CheckBox cb1 = new CheckBox(this) ;
+		cb1.setText("Opcao1") ;
+		
+		checkPeriodos.addView(checkPeriodos) ; 
+	}
+	
+}

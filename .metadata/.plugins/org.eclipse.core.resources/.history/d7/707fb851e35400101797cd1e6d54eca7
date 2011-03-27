@@ -1,0 +1,37 @@
+package br.com.pixel3.pixel3list.util;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Calendar;
+
+import android.content.Context;
+
+public class Pixel3ListUtil {
+
+	private final Context ctx;
+	
+	private static final String PREFS = "Pixel3List" ;
+
+	private static final String ACESSOS = "Acessos";
+
+	public Pixel3ListUtil(Context ctx) {
+		this.ctx = ctx;
+	}
+	
+	public String cript(String dado) {
+		try {
+			MessageDigest msg = MessageDigest.getInstance("sha-256") ;
+			byte[] digest = msg.digest(dado.getBytes()) ;
+			String cript = new String(digest) ;
+			return cript ;
+		} catch (NoSuchAlgorithmException e) {
+			throw new RuntimeException() ;
+		}
+	}
+	
+	public boolean isMesmaData() {
+		Calendar calendar = Calendar.getInstance() ;
+		return true ;
+	}
+	
+}

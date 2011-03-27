@@ -1,0 +1,53 @@
+package br.com.pixel3.pixel3list.modelo;
+
+import java.util.Calendar;
+
+public class Presenca {
+
+	private Long id ;
+	private Calendar data ;
+	private Aluno aluno ;
+	private String periodo ;
+	private boolean presenca ;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+
+	public String getPeriodo() {
+		return periodo;
+	}
+
+	public void setPeriodo(String periodo) {
+		this.periodo = periodo;
+	}
+
+	public boolean isPresenca() {
+		return presenca;
+	}
+
+	public void setPresenca(boolean presenca) {
+		this.presenca = presenca;
+	}
+
+	public void setData(Calendar data) {
+		this.data = data;
+	}
+
+	public Calendar getData() {
+		return data;
+	}
+	
+}

@@ -1,0 +1,52 @@
+
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:id="@+id/imageView1"
+		android:layout_height="wrap_content" android:src="@drawable/cabecalho"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_centerHorizontal="true"></ImageView>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout2" android:layout_width="wrap_content"
+		android:layout_below="@+id/imageView1" android:layout_alignParentBottom="@+id/imageView1">
+		<RelativeLayout android:layout_height="wrap_content"
+			android:id="@+id/relativeLayout3" android:layout_width="wrap_content"
+			>
+			<ImageView android:id="@+id/imageView3"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:src="@drawable/icon" android:layout_alignParentLeft="true"></ImageView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:id="@+id/relativeLayout3" android:layout_width="wrap_content"
+			android:layout_alignRight="@+id/relativeLayout3">
+			<EditText android:layout_alignLeft="@+id/textView1"
+				android:layout_height="wrap_content" android:id="@+id/editText1"
+				android:text="EditText" android:layout_below="@+id/textView1"
+				android:layout_width="wrap_content"></EditText>
+			<TextView android:layout_alignLeft="@+id/editText1"
+				android:layout_height="wrap_content" android:layout_below="@+id/editText1"
+				android:text="TextView" android:id="@+id/textView2"
+				android:layout_width="wrap_content"></TextView>
+			<EditText android:layout_alignLeft="@+id/textView2"
+				android:layout_height="wrap_content" android:id="@+id/editText2"
+				android:text="EditText" android:layout_below="@+id/textView2"
+				android:layout_width="wrap_content"></EditText>
+			<Button android:id="@+id/button1" android:layout_height="wrap_content"
+				android:text="Button" android:layout_below="@+id/editText2"
+				android:layout_alignRight="@+id/editText2" android:layout_width="wrap_content"></Button>
+			<TextView android:layout_height="wrap_content" android:text="TextView" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_alignParentRight="true"></TextView>
+		</RelativeLayout>
+	</RelativeLayout>
+	
+	<FrameLayout android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+		android:id="@+id/frameLayout1">
+		<ImageView android:id="@+id/imageView2"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:src="@drawable/icon"></ImageView>
+		<ImageView android:id="@+id/imageView4"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:src="@drawable/rodape"></ImageView>
+	</FrameLayout>
+
+</RelativeLayout>

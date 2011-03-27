@@ -1,0 +1,47 @@
+package br.com.pixel3.pixel3list.dao;
+
+import java.util.Calendar;
+import java.util.List;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import br.com.pixel3.pixel3list.modelo.Presenca;
+
+public class PresencaDAO extends SQLiteOpenHelper {
+
+	private static final String TABELA = "Presenca";
+	private static final int VERSAO = 1;
+	private static final String[] COLS = {"id", "aluno", "periodo", "data", "presenca"} ;
+
+	public PresencaDAO(Context context) {
+		super(context, TABELA, null, VERSAO);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	}
+
+	private int qtdDatasDifetentes() {
+		String sql = "SELECT COUNT (DISTINCT data) from " + TABELA + " ;" ;
+		Cursor c = getWritableDatabase().rawQuery(sql, null) ;
+		
+		return c.getInt(0) ;
+	}
+	
+	private void salvarTodos(List<Presenca> presencao) {
+		for (Presenca presenca : presencao) {
+			
+		}
+	}
+	
+	private List<Presenca> getPresencasPorData(Calendar calendar) {
+		return null ;
+	}
+	
+}

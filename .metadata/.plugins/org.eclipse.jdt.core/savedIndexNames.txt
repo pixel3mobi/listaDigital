@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Projetos\Pixel3\.metadata\.plugins\org.eclipse.jdt.core
+2865046418.index
+1998563729.index
+3423064964.index

@@ -1,0 +1,53 @@
+package br.com.pixel3.pixel3list.dao;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import br.com.pixel3.pixel3list.modelo.Usuario;
+
+public class UsuarioDAO extends SQLiteOpenHelper {
+
+	private static final int VERSAO = 1;
+	private static final String TABELA = "Usuario";
+
+	public UsuarioDAO(Context ctx) {
+		super(ctx, TABELA, null, VERSAO) ;
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	}
+	
+	public void salvarOuAtualizar(Usuario usuario) {
+		ContentValues valores = new ContentValues() ;
+		valores.put("", usuario.getNome()) ;
+		valores.put("", usuario.getLogin()) ;
+		valores.put("", usuario.getSenha()) ;
+		valores.put("", usuario.getEmail()) ;
+		valores.put("", usuario.getEscola()) ;
+		valores.put("", usuario.getSexo()) ;
+		valores.put("", usuario.getId()) ;
+		if ( usuario.getId() == 0 ) {
+			getWritableDatabase().insert(TABELA, null, valores) ;
+		} else {
+			getWritableDatabase().update(TABELA, valores, "id=?", usuario.getId().toString()) ;
+		}
+	}
+
+	public Usuario getUsuarioPorId(int i) {
+		Usuario u = new Usuario() ;
+		u.setId(new Long(0)) ;
+		
+		return u;
+	}
+
+	public boolean logar(String login, String senha) {
+		return true;
+	}
+	
+}
